@@ -77,7 +77,7 @@ class LinkedList
 
   def remove(key)
     self.each do |node|
-      node.remove if node.key == key
+      return node.remove if node.key == key
     end
     nil
   end
